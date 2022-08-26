@@ -1,9 +1,9 @@
 {
-  "name": "boilerplate-react-ts",
+  "name": "calculadora-ml",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
-  "license": "MIT",
+  "license": "ISC",
   "author": {
     "name": "Thiago Lins",
     "email": "falecom@thiagolins.dev.br",
@@ -27,11 +27,14 @@
       "yarn lint --fix"
     ]
   },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
+  },
   "dependencies": {
+    "@material-ui/styled-engine": "npm:@mui/styled-engine-sc@latest",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
     "@mui/styled-engine-sc": "^5.10.1",
-    "@types/styled-components": "^5.1.25",
     "axios": "^0.27.2",
     "file-saver": "^2.0.5",
     "lodash": "^4.17.21",
