@@ -1,9 +1,8 @@
 import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
-import { useTranslation, Trans } from 'react-i18next'
+import { t } from '@i18n'
 
 const Home = () => {
-  const { t } = useTranslation()
   const [count, setCount] = useState(0)
   return (
     <div className="App">
