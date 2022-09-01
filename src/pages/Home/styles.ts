@@ -13,6 +13,7 @@ export const Container = styled.div`
     .aside {
       display: flex;
       flex-direction: column;
+      gap: 2rem;
       align-items: center;
       padding: 2rem;
     }

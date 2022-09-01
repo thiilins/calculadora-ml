@@ -1,16 +1,10 @@
 import styled, { css } from 'styled-components'
 export const CardDevelopmentByWrapper = styled.div`
   ${({ theme }) => css`
-    width: 100%;
-    height: 100%;
+    color: ${theme.colors.secondary};
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: inset 5px 5px 10px #a9a9aa77, inset -5px -5px 10px #ffffff7e;
-    color: ${theme.colors.secondary};
     & .img {
       height: 100px;
       margin-top: 1.6em;
