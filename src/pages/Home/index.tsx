@@ -7,6 +7,7 @@ import CardDevelopmentBy from '@components/CardDevelopmentBy'
 import adSpace from '@assets/ad_space_square.png'
 import Card from '@components/Card'
 import { maxHeight } from '@mui/system'
+import LoadingComponent from '@/components/LoadingComponent'
 const Home = () => {
   document.title = t('general.mercado livre') + ' | ' + t('general.site title')
   const [loading, setLoading] = useState(true)
@@ -23,6 +24,11 @@ const Home = () => {
         <CardDevelopmentBy />
         <Card styles={{ maxWidth: '300px', height: '250px' }}>
           <img src={adSpace} />
+        </Card>
+      </div>
+      <div className="content">
+        <Card>
+          <LoadingComponent />
         </Card>
       </div>
     </Container>

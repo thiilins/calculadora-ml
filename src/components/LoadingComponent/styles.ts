@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components'
 
 export const LoadingContainer = styled.div`
   ${({ theme }) => css`
-    position: absolute;
     min-width: 100%;
     min-height: 100%;
     display: flex;
@@ -11,7 +10,6 @@ export const LoadingContainer = styled.div`
     align-items: center;
     justify-content: center;
     background-color: ${theme.colors.white};
-    z-index: 9999;
   `}
 `
 export const LoadingAnimation = styled.div`
