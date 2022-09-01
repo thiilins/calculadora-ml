@@ -1,14 +1,14 @@
-import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
 import { t } from '@i18n'
 import { Container } from './styles'
+import LoadingPageComponent from '@components/loadingPageComponent'
+import { useEffect } from 'react'
 const Home = () => {
+  document.title = t('general.mercado livre') + ' | ' + t('general.site title')
+
   return (
     <Container>
-      <p className="welcome">{t('home.bem_vindo')}</p>
-      <span className="welcome__subtitle">
-        Edite o Arquivo Translation.json na pasta public e veja
-      </span>
+      <LoadingPageComponent loading={false} />
     </Container>
   )
 }

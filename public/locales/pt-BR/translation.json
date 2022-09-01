@@ -1,5 +1,10 @@
 {
   "home": {
     "bem_vindo": "APP Baseado em React com internacionalização"
+  },
+  "general": {
+    "loading": "Carregando...",
+    "mercado livre": "Mercado Livre",
+    "site title": "Calculadora de Taxas"
   }
 }

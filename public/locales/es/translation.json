@@ -1,0 +1,10 @@
+{
+  "home": {
+    "bem_vindo": "APP baseado em react com internacionalização"
+  },
+  "general": {
+    "loading": "Cargando...",
+    "mercado livre": "Mercado Libre",
+    "site title": "Calculadora de tarifas"
+  }
+}

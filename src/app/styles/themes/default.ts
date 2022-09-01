@@ -7,7 +7,7 @@ export default {
     titleText: '#004346',
     contentText: '#A3A6B4',
     contentTextDark: '#495057',
-    background: '#EFF6F5',
+    background: '#EBEBEB',
     red: '#f44336',
     redLight: '#f6685e',
     redDark: '#8a1c1c',
@@ -66,14 +66,17 @@ export default {
     black: '#0e0e0e'
   },
   fonts: {
-    family: "'Roboto', sans-serif",
+    family: {
+      ubuntu: "'Ubuntu', sans-serif",
+      quickSand: "'Quicksand', sans-serif",
+      harabara_mais: "'Harabara Mais'"
+    },
     weight: {
-      extraLight: 200,
+      extraLight: 300,
       regular: 400,
       medium: 500,
       semiBold: 600,
-      bold: 700,
-      black: 900
+      bold: 700
     },
     size: {
       xxSmall: '1.2rem',
