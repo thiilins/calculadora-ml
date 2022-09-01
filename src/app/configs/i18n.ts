@@ -21,6 +21,11 @@ const T = (value: string) => {
   const { t } = useTranslation()
   return t(value)
 }
+const getLanguage = () => {
+  const language = localStorage.getItem('i18nextLng')
+  return languages.find((lng) => lng.alias === language)
+}
+
 export const languages = [
   {
     name: 'pt-br',
@@ -33,5 +38,6 @@ export const languages = [
     flag: 'es'
   }
 ]
-export { T as t, useTranslation }
+const selectedLanguage = getLanguage()
+export { T as t, useTranslation, selectedLanguage }
 export default i18n
