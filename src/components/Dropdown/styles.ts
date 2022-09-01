@@ -24,25 +24,24 @@ export const UserImg = styled.img`
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 50%;
-  margin: 0.4rem 0 0.4rem 0.6rem;
 `
 
 export const DropdownBtn = styled.button<DropdownBtnProps>`
   background-color: #fff;
-  color: ${({ disabled }) => (disabled ? '#b1aabb' : '#324147')};
-
-  font-size: 1.3rem;
-  border: 1px solid #ddd7e5;
+  color: ${({ disabled, theme }) =>
+    disabled ? '#b1aabb' : theme.colors.secondary};
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: ${({ theme }) => theme.fonts.family.harabara_mais};
+  border: none;
+  box-shadow: none;
   cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
-
-  width: ${({ width }) => (width ? width : '15rem')};
-
+  width: ${({ width }) => (width ? width : '17rem')};
   display: flex;
+  gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
-
-  padding: 1.2rem;
-
+  padding: 1.3rem;
   border-radius: ${({ fullRounded = true }) => (fullRounded ? '20px' : '10px')};
 `
 
@@ -50,12 +49,11 @@ export const DropdownContent = styled.div<DropdownContentProps>`
   display: none;
   position: absolute;
   background-color: #fff;
-  border: 1px solid #ddd7e5;
+  border: none;
   margin-top: 0.4rem;
   margin-bottom: 2rem;
   z-index: 1;
   border-radius: 10px;
-
   max-height: 20rem;
   overflow: auto;
 
@@ -76,7 +74,7 @@ export const DropdownContent = styled.div<DropdownContentProps>`
     border: none;
   }
 
-  width: ${({ width }) => (width ? width : '15rem')};
+  width: ${({ width }) => (width ? width : '17rem')};
 
   ${({ open }) =>
     open &&

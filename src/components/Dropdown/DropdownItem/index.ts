@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const DropdownItem = styled.button`
   font-size: 1.3rem;
@@ -14,6 +14,6 @@ const DropdownItem = styled.button`
   &:hover {
     background: rgba(0, 0, 0, 0.04);
   }
-`;
+`
 
-export default DropdownItem;
+export default DropdownItem

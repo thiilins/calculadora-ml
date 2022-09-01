@@ -19,7 +19,7 @@ function usePersistedState<T>(
   useEffect(() => {
     const value = type === 'object' ? JSON.stringify(state) : state
     localStorage.setItem(key, value)
-  }, [key, state])
+  }, [key, state, type])
 
   return [state, setState]
 }

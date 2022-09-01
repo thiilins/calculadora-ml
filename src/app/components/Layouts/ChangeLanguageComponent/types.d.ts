@@ -1,1 +1,3 @@
-export type ChangeLanguageComponentProps = { }
+export type ChangeLanguageComponentProps = {
+  //
+}

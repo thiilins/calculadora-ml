@@ -8,6 +8,7 @@ ${({ theme }) => css`
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
     &::before,
     &::after {
       box-sizing: inherit;
@@ -15,7 +16,7 @@ ${({ theme }) => css`
   }
   html {
     font-size: 62.5%;
-    font-family: ${theme.fonts.family.ubuntu};
+    font-family: ${theme.fonts.family.harabara_mais};
     color: ${theme.colors.contentText};
   }
   fieldset {
