@@ -7,16 +7,18 @@ import CardDevelopmentBy from '@components/CardDevelopmentBy'
 const Home = () => {
   document.title = t('general.mercado livre') + ' | ' + t('general.site title')
   const [loading, setLoading] = useState(true)
-  // useEffect(() => {
-  //   loading &&
-  //     setTimeout(() => {
-  //       setLoading(false)
-  //     }, 1000)
-  // }, [loading])
+  useEffect(() => {
+    loading &&
+      setTimeout(() => {
+        setLoading(false)
+      }, 2000)
+  }, [loading])
   return (
     <Container>
-      <LoadingPageComponent loading={false} />
-      <CardDevelopmentBy />
+      <LoadingPageComponent loading={loading} />
+      <div className="aside">
+        <CardDevelopmentBy />
+      </div>
     </Container>
   )
 }

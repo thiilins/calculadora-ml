@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-export const CardDevelopmentByWrapper = styled.div`
+export const CardWrapper = styled.div`
   ${({ theme }) => css`
     width: 100%;
     height: 100%;
