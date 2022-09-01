@@ -20,6 +20,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@app/*": ["./src/app/*"],
+      "@configs/*": ["./src/app/configs/*"],
+      "@i18n": ["./src/app/configs/i18n.ts"],
       "@components/*": ["./src/components/*"],
       "@utils/*": ["./src/shared/utils/*"],
       "@pages/*": ["./src/pages/*"],
@@ -33,6 +35,7 @@
       "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]
     }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["./src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "files": ["./src/app/styles/styled.d.ts"]
 }

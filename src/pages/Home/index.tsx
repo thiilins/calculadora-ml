@@ -1,29 +1,37 @@
-import reactLogo from '@assets/react.svg'
 import React, { useState } from 'react'
-import { useTranslation, Trans } from 'react-i18next'
-
+import { t } from '@i18n'
+import { Container } from './styles'
+import LoadingPageComponent from '@components/loadingPageComponent'
+import { useEffect } from 'react'
+import CardDevelopmentBy from '@components/CardDevelopmentBy'
+import adSpace from '@assets/ad_space_square.png'
+import Card from '@components/Card'
+import { maxHeight } from '@mui/system'
+import LoadingComponent from '@/components/LoadingComponent'
 const Home = () => {
-  const { t } = useTranslation()
-  const [count, setCount] = useState(0)
+  document.title = t('general.mercado livre') + ' | ' + t('general.site title')
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {
+    loading &&
+      setTimeout(() => {
+        setLoading(false)
+      }, 2000)
+  }, [loading])
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Container>
+      <LoadingPageComponent loading={loading} />
+      <div className="aside">
+        <CardDevelopmentBy />
+        <Card styles={{ maxWidth: '300px', height: '250px' }}>
+          <img src={adSpace} />
+        </Card>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p dangerouslySetInnerHTML={{ __html: t('home.edit_code') }}></p>
+      <div className="content">
+        <Card>
+          <LoadingComponent />
+        </Card>
       </div>
-      <p className="read-the-docs">{t('home.read_docs')}</p>
-    </div>
+    </Container>
   )
 }
 

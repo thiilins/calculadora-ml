@@ -1,6 +1,14 @@
 {
   "home": {
-    "read_docs": "Clique nos logotipos Vite e React para saber mais",
-    "edit_code": "Edite <code>src/App.tsx</code> e salve para testar"
+    "development_by": "Desenvolvido por"
+  },
+  "general": {
+    "loading": "Carregando...",
+    "mercado livre": "Mercado Livre",
+    "site title": "Calculadora de Taxas"
+  },
+  "languages": {
+    "pt-br": "Português",
+    "es": "Espanhol"
   }
 }

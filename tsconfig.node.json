@@ -5,6 +5,5 @@
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts"],
-  "files": ["./src/app/styles/styled.d.ts"]
+  "include": ["vite.config.ts"]
 }
