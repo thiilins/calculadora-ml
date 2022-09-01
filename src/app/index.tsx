@@ -7,7 +7,6 @@ import { ThemeProvider as MUIThemeProvider } from '@mui/material/styles'
 import defaultTheme, { MUIDefaultTheme } from '@styles/themes/default'
 import CssBaseline from '@mui/material/CssBaseline'
 
-import './App.css'
 function App() {
   return (
     <MUIThemeProvider theme={MUIDefaultTheme}>

@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material/styles'
-const defaultTheme = {
+export default {
   title: 'light',
   colors: {
     primary: '#005356',
@@ -118,5 +118,3 @@ export const MUIDefaultTheme = createTheme({
     }
   }
 })
-
-export default defaultTheme

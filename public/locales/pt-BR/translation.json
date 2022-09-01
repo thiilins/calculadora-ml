@@ -1,6 +1,5 @@
 {
   "home": {
-    "read_docs": "Clique nos logotipos Vite e React para saber mais",
-    "edit_code": "Edite <code>src/App.tsx</code> e salve para testar"
+    "bem_vindo": "APP Baseado em React com internacionalização"
   }
 }

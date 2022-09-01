@@ -1,4 +1,3 @@
-import '@app/index.css'
 import App from '@/app'
 import React from 'react'
 import '@configs/i18n'
