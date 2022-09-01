@@ -11,9 +11,9 @@ export const Container = styled.div<LoadingPageProps>`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* z-index: 1; */
-    /* position: absolute; */
-    /* top: 0; */
+    z-index: 1;
+    position: absolute;
+    top: 0;
     ${!loading &&
     `-webkit-animation: slide-out-left 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;  
     animation: slide-out-left 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530)  both;`}

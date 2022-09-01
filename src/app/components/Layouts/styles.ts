@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components'
 export const LayoutContainer = styled.div`
   ${({ theme }) => css`
     display: grid;
+    position: relative;
     grid-template-columns: 100vw;
     grid-template-rows: 72px auto;
     grid-template-areas:

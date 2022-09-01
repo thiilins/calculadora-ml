@@ -13,7 +13,9 @@ const Home = () => {
       }, 1000)
   }, [loading])
   return (
-    <Container>{/* <LoadingPageComponent loading={loading} /> */}</Container>
+    <Container>
+      <LoadingPageComponent loading={false} />
+    </Container>
   )
 }
 

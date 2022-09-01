@@ -6,5 +6,9 @@
     "loading": "Carregando...",
     "mercado livre": "Mercado Livre",
     "site title": "Calculadora de Taxas"
+  },
+  "languages": {
+    "pt-br": "Português",
+    "es": "Espanhol"
   }
 }

@@ -6,5 +6,9 @@
     "loading": "Cargando...",
     "mercado livre": "Mercado Libre",
     "site title": "Calculadora de tarifas"
+  },
+  "languages": {
+    "pt-br": "Portugués",
+    "es": "Español"
   }
 }
