@@ -2,8 +2,8 @@ import { createTheme } from '@mui/material/styles'
 export default {
   title: 'light',
   colors: {
-    primary: '#005356',
-    secondary: '#80C340',
+    primary: '#FFE600',
+    secondary: '#283380',
     titleText: '#004346',
     contentText: '#A3A6B4',
     contentTextDark: '#495057',
