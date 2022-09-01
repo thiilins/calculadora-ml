@@ -1,4 +1,4 @@
-import { StandardButton } from '@components/Button'
+// import { StandardButton } from '@components/Button'
 import React from 'react'
 import Modal from 'react-modal'
 import * as S from './styles'
@@ -63,7 +63,7 @@ const StandardModal = ({
         </S.Header>
         <S.Content>{children}</S.Content>
         <S.Footer>
-          <StandardButton
+          {/* <StandardButton
             text={cancelBtnText}
             primaryColor={cancelBtnColor}
             sx={{
@@ -78,7 +78,7 @@ const StandardModal = ({
               height: '45px'
             }}
             onClick={addSaveBtnAction}
-          />
+          /> */}
         </S.Footer>
       </S.Wrapper>
     </Modal>
