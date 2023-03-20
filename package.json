@@ -32,7 +32,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
     "@mui/styled-engine-sc": "^5.10.1",
-    "@mui/x-data-grid": "^5.16.0",
+    "@mui/x-data-grid": "^6.0.2",
     "@types/styled-components": "^5.1.25",
     "axios": "^1.2.1",
     "file-saver": "^2.0.5",
