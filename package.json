@@ -88,7 +88,7 @@
     "prettier": "^3.0.1",
     "tsconfig-paths": "^4.1.0",
     "typescript": "^5.0.3",
-    "vite": "^4.0.2",
+    "vite": "^5.0.5",
     "vite-plugin-i18n-resources": "^1.0.3"
   },
   "resolutions": {
