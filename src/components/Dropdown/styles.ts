@@ -1,49 +1,49 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
-import { ReactComponent as ArrowDown } from '@assets/arrow-down.svg'
-import { ReactComponent as ArrowUp } from '@assets/arrow-up.svg'
+import ArrowDown from "@assets/arrow-down.svg";
+import ArrowUp from "@assets/arrow-up.svg";
 
 interface DropdownBtnProps {
-  width?: string
-  open: boolean
-  fullRounded?: boolean
-  disabled?: boolean
+  width?: string;
+  open: boolean;
+  fullRounded?: boolean;
+  disabled?: boolean;
 }
 
 interface DropdownContentProps {
-  open: boolean
-  width?: string
+  open: boolean;
+  width?: string;
 }
 
 export const Container = styled.div`
   position: relative;
   display: inline-block;
-`
+`;
 
 export const UserImg = styled.img`
   width: 3.3rem;
   height: 3.3rem;
   border-radius: 50%;
-`
+`;
 
 export const DropdownBtn = styled.button<DropdownBtnProps>`
   background-color: #fff;
   color: ${({ disabled, theme }) =>
-    disabled ? '#b1aabb' : theme.colors.secondary};
+    disabled ? "#b1aabb" : theme.colors.secondary};
   font-size: 1.5rem;
   font-weight: bold;
   font-family: ${({ theme }) => theme.fonts.family.harabara_mais};
   border: none;
   box-shadow: none;
-  cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
-  width: ${({ width }) => (width ? width : '17rem')};
+  cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
+  width: ${({ width }) => (width ? width : "17rem")};
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: space-between;
   padding: 1.3rem;
-  border-radius: ${({ fullRounded = true }) => (fullRounded ? '20px' : '10px')};
-`
+  border-radius: ${({ fullRounded = true }) => (fullRounded ? "20px" : "10px")};
+`;
 
 export const DropdownContent = styled.div<DropdownContentProps>`
   display: none;
@@ -74,7 +74,7 @@ export const DropdownContent = styled.div<DropdownContentProps>`
     border: none;
   }
 
-  width: ${({ width }) => (width ? width : '17rem')};
+  width: ${({ width }) => (width ? width : "17rem")};
 
   ${({ open }) =>
     open &&
@@ -84,38 +84,38 @@ export const DropdownContent = styled.div<DropdownContentProps>`
       padding: 1rem;
       align-items: center;
     `}
-`
+`;
 
 interface IconProps {
-  disabled?: boolean
-  arrowColor?: string
+  disabled?: boolean;
+  arrowColor?: string;
 }
 
 export const ArrowDownIcon = styled(ArrowDown)<IconProps>`
   path {
     fill: ${({ disabled, arrowColor }) =>
-      arrowColor ? arrowColor : disabled ? '#b1aabb' : '#4f6872'};
+      arrowColor ? arrowColor : disabled ? "#b1aabb" : "#4f6872"};
   }
-`
+`;
 
 export const ArrowUpIcon = styled(ArrowUp)<IconProps>`
   path {
     fill: ${({ disabled, arrowColor }) =>
-      arrowColor ? arrowColor : disabled ? '#b1aabb' : '#4f6872'};
+      arrowColor ? arrowColor : disabled ? "#b1aabb" : "#4f6872"};
   }
-`
+`;
 
 export const IconContainer = styled.div`
   display: flex;
   margin-left: 1rem;
   justify-content: flex-end;
-`
+`;
 
 interface PlaceHolderTextProps {
-  placeholderColor?: string
+  placeholderColor?: string;
 }
 
 export const PlaceHolderText = styled.p<PlaceHolderTextProps>`
   color: ${({ placeholderColor }) =>
-    placeholderColor ? placeholderColor : '#b1aabb'};
-`
+    placeholderColor ? placeholderColor : "#b1aabb"};
+`;
