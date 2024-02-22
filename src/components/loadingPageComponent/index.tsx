@@ -1,6 +1,6 @@
 import React from 'react'
 import { t } from '@i18n'
-import MercadoLivreLogo from '@assets/mercado_livre_vertical.svg?react'
+import MercadoLivreLogo from '@assets/mercado_livre_vertical.svg?component'
 import { Container, HeartBeatAnimation } from './styles'
 import { LoadingPageProps } from './types'
 const LoadingPageComponent = ({ loading }: LoadingPageProps) => {

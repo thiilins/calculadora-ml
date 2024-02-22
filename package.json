@@ -88,7 +88,8 @@
     "tsconfig-paths": "^4.1.0",
     "typescript": "^5.0.3",
     "vite": "^5.0.10",
-    "vite-plugin-i18n-resources": "^1.0.3"
+    "vite-plugin-i18n-resources": "^1.0.3",
+    "vite-plugin-react-rich-svg": "^1.1.0"
   },
   "resolutions": {
     "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"

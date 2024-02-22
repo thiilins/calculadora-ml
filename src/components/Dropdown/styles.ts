@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
-import ArrowDown from '@assets/arrow-down.svg?react'
-import ArrowUp from '@assets/arrow-up.svg?react'
+import ArrowDown from '@assets/arrow-down.svg?component'
+import ArrowUp from '@assets/arrow-up.svg?component'
 
 interface DropdownBtnProps {
   width?: string

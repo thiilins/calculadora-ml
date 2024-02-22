@@ -1,7 +1,6 @@
-/// <reference types="vite-plugin-svgr/client" />
 import React from 'react'
 
-import MercadoLivreLogo from '@/assets/mercado_livre_horizontal.svg?react'
+import MercadoLivreLogo from '@/assets/mercado_livre_horizontal.svg?component'
 import * as S from './styles'
 import ChangeLanguageComponent from '../ChangeLanguageComponent'
 
