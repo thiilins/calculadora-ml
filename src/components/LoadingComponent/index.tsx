@@ -6,7 +6,7 @@ const LoadingComponent: React.FC = () => {
   return (
     <LoadingContainer>
       <LoadingAnimation>
-        <div className="loading__items">
+        <div className="loading__it ems">
           <div></div>
           <div></div>
           <div></div>

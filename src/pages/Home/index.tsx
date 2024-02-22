@@ -6,7 +6,6 @@ import { useEffect } from 'react'
 import CardDevelopmentBy from '@components/CardDevelopmentBy'
 import adSpace from '@assets/ad_space_square.png'
 import Card from '@components/Card'
-import { maxHeight } from '@mui/system'
 import LoadingComponent from '@/components/LoadingComponent'
 const Home = () => {
   document.title = t('general.mercado livre') + ' | ' + t('general.site title')

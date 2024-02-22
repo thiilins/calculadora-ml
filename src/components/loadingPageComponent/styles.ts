@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components'
-import { LoadingPageProps } from './types'
-export const Container = styled.div<LoadingPageProps>`
+export const Container = styled.div<{ loading: boolean }>`
   ${({ theme, loading }) => css`
     background-color: ${theme.colors.primary};
     width: 100vw;
