@@ -10,6 +10,7 @@
     "url": "https://www.thiagolins.dev.br"
   },
   "scripts": {
+    "prebuild": "rimraf dist",
     "dev": "vite",
     "start": "vite",
     "lint": "eslint src --max-warnings=0",
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "@material-ui/styled-engine": "npm:@mui/styled-engine-sc@latest",
+    "@mui/core": "^5.0.0-alpha.54",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.10.1",
     "@mui/styled-engine-sc": "^5.10.1",
@@ -37,7 +39,7 @@
     "axios": "^1.2.1",
     "file-saver": "^2.0.5",
     "i18next": "^23.4.1",
-     "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.1.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
@@ -57,11 +59,9 @@
     "@babel/core": "^7.18.10",
     "@storybook/addon-actions": "^7.0.7",
     "@storybook/addon-essentials": "^7.0.7",
-
     "@storybook/addon-interactions": "^7.0.7",
-  "@storybook/addon-links": "^7.0.7",
-     "@storybook/builder-vite": "^7.0.7",
-
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/builder-vite": "^7.0.7",
     "@storybook/react": "^7.0.7",
     "@storybook/testing-library": "^0.2.0",
     "@types/file-saver": "^2.0.5",
@@ -69,7 +69,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-modal": "^3.13.1",
     "@types/react-router-dom": "^5.3.3",
-       "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "@vitejs/plugin-react": "^4.0.0",
     "babel-loader": "^9.1.0",
@@ -85,6 +85,7 @@
     "eslint-plugin-storybook": "^0.8.0",
     "plop": "^4.0.0",
     "prettier": "^3.0.1",
+    "rimraf": "^5.0.5",
     "tsconfig-paths": "^4.1.0",
     "typescript": "^5.0.3",
     "vite": "^5.0.10",

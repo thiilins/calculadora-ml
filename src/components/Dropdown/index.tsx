@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ClickAwayListener from '@mui/base/ClickAwayListener'
+import { ClickAwayListener } from '@mui/base'
 
 import {
   Container,
@@ -44,6 +44,8 @@ const Dropdown = ({
   const [open, setOpen] = useState(false)
 
   return (
+    // ...
+
     <ClickAwayListener onClickAway={() => setOpen(false)}>
       <Container
         style={containerStyle}
